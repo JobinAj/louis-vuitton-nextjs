@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Louis Vuitton Web";
+  src: url("/fonts/LouisVuitton-Demi.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Louis Vuitton Web";
+  src: url("/fonts/LouisVuitton-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Louis Vuitton Web";
+  src: url("/fonts/LouisVuitton-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+body {
+  @apply bg-black text-white h-screen flex flex-col font-body text-[16px] leading-[20px];
+}
+
+main {
+  @apply flex-1;
+}
+
+.showHeader {
+  @apply shadow-sm bg-white translate-y-0;
+}
+
+.hideHeader {
+  @apply shadow-none  translate-y-[-100%];
+}
